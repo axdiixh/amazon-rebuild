@@ -15,7 +15,7 @@ const DeliveryAddress = () => {
                     <h1 className="font-bold text-lg">1. Delivery Address</h1>
                     <p className="text-sm w-[25%]">
                         Lorem Ipsum
-                        has been the industry's standard dummy text
+                        has been the industrys standard dummy text
                         when an unknown printer took a galley of type
                     </p>
                 </div>
