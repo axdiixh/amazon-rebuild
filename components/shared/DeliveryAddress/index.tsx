@@ -24,9 +24,9 @@ const DeliveryAddress = () => {
                 <div className="flex justify-between w-full md:w-[50%]">
                     <h1 className="font-bold text-lg">2. Items and delivery</h1>
                 </div>
-                {cart?.map((product: any) => {
+                {cart?.map((product: any, index: any) => {
                     return (
-                        <div className="my-4">
+                        <div key={index} className="my-4">
                             <div className="flex flex-col items-center md:items-start md:flex-row">
                                 <Image src={product.image} alt={product.title} width={150} height={150} />
                                 <div className="ml-4">

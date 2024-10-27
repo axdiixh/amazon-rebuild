@@ -17,7 +17,7 @@ const SearchResult = ({ filterData, loading }: { filterData: any, loading: boole
       <div className='md:w-[80%] mx-5 md:mx-auto'>
         <div className='mt-10'>
           <h1 className='font-bold text-2xl'>No Products Found</h1>
-          <p>Try adjusting your search or filter to find what you're looking for.</p>
+          <p>Try adjusting your search or filter to find what you are looking for.</p>
         </div>
       </div>
     );

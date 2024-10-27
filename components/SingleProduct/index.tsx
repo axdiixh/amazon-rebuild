@@ -13,12 +13,12 @@ const SingleProduct = ({ product, loading }: { product: any; loading: boolean })
     }
 
     return (
-        <div className="w-[80%] mx-auto mt-10">
+        <div className="w-full md:w-[80%] mx-5 md:mx-auto mt-10">
             {product && product?.length > 0 ? (
-                <div className="flex justify-between">
+                <div className="flex flex-col md:flex-row justify-between">
                     <div>
-                        <div className="flex">
-                            <div className="bg-gray-100 h-fit">
+                        <div className="flex flex-col mb-5 md:mb-0 md:flex-row">
+                            <div className="flex justify-center bg-gray-100 h-fit">
                                 <Image
                                     className="mix-blend-multiply p-2"
                                     src={product?.[0]?.image}
@@ -27,7 +27,7 @@ const SingleProduct = ({ product, loading }: { product: any; loading: boolean })
                                     height={200}
                                 />
                             </div>
-                            <div className="mx-4 w-[70%]">
+                            <div className="md:mx-4 mt-5 md:mt-0 w-full md:w-[70%]">
                                 <h1 className="font-bold text-lg">{product?.[0]?.title}</h1>
                                 <p>{product?.[0]?.description}</p>
                                 <Rating ratings={product?.[0]?.rating} />
